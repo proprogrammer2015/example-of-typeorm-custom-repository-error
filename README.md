@@ -22,7 +22,8 @@ npm run ts
 To get tests passing restore commented out lines in TypeConnectionManager.ts file.
 
 # Steps to reproduce the issue
-1. Run ```sh 
+1. Run 
+```sh 
 npm t 
 ```
 
@@ -56,3 +57,12 @@ TypeError: Object prototype may only be an Object or null: undefined
   ✖ TypeConnectionManager.test.js exited with a non-zero exit code: 1
   ```
 
+# Update
+Moving entity Type before EntityManager resolves above issue:
+
+```ts
+import * as _ from 'lodash';
+import { Type } from './Type';
+import { EntityManager } from 'typeorm/entity-manager/EntityManager';
+import { EntityRepository } from 'typeorm';
+```

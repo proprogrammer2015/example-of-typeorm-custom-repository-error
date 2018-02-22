@@ -1,8 +1,8 @@
 import test from 'ava';
 import * as sinon from 'sinon';
+import { EntityManager } from 'typeorm';
 import { TypeConnectionManager } from './TypeConnectionManager';
 import { Type } from './Type';
-import { EntityManager } from 'typeorm/entity-manager/EntityManager';
 
 const createType = (id: number, typeName1: string): Promise<Type> => {
     let type1 = new Type();

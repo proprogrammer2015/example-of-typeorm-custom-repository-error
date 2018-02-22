@@ -1,21 +1,11 @@
-// import { TypeConnection } from './TypeConnection';
-import { EntityManager } from 'typeorm/entity-manager/EntityManager';
-import { EntityRepository } from 'typeorm';
-import { Type } from './Type';
 import * as _ from 'lodash';
+import { EntityRepository } from 'typeorm';
+import { EntityManager } from 'typeorm';
+import { Type } from './Type';
 
-@EntityRepository()
+@EntityRepository(Type)
 export class TypeConnectionManager {
     constructor(private manager: EntityManager) { }
-
-    // public getOrCreateIfAbsent(type1: string, type2: string): Promise<TypeConnection> {
-
-    //     let t = new TypeConnection();
-    //     t.type1 = null;
-    //     t.type2 = null;
-
-    //     return this.manager.save(null);
-    // }
 
     public getTypes(typeName1: string, typeName2: string): Promise<Type[]> {
         if (_.isNil(typeName1)) {
