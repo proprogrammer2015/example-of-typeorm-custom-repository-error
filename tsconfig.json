@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es5",
+        "moduleResolution": "Node",
+        "removeComments": true,
+        "sourceMap": true,
+        "module": "commonjs",
+        "baseUrl": "./",
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "typeRoots": [
+            "node_modules/types-query-manager",
+            "node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

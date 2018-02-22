@@ -1,0 +1,20 @@
+{
+  "name": "typeorm-repository-error",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts":{
+    "ts": "./node_modules/.bin/tsc -p ./tsconfig.json",
+    "test": "npm run ts && ava --watch --no-cache",
+    "test:once": "npm run ts && ava --no-cache"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.104",
+    "@types/sinon": "^4.1.3",
+    "ava": "^0.25.0",
+    "lodash": "^4.17.5",
+    "sinon": "^4.3.0",
+    "typeorm": "^0.1.12",
+    "typescript": "^2.7.2"
+  }
+}
