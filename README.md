@@ -1,14 +1,19 @@
-# Run test once
+# Install dependencies
+```sh
+yarn install
+```
+
+# Run tests once
 ```sh
 npm run test:once
 ```
 
-# Run test in watch mode
+# Run tests in watch mode
 ```sh
 npm t
 ```
 
-# Compile ts to js
+# Compile *.ts to *.js
 ```sh
 npm run ts
 ```
