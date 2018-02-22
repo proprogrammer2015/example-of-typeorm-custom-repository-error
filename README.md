@@ -22,7 +22,10 @@ npm run ts
 To get tests passing restore commented out lines in TypeConnectionManager.ts file.
 
 # Steps to reproduce the issue
-1. Run ```sh npm t ```
+1. Run ```sh 
+npm t 
+```
+
  Following exception is thrown:
 
 ```
